@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="To Do List Manager"
+        android:layout_marginTop="20dp"
         android:id="@+id/textview"
         android:textSize="20sp"
         />
@@ -43,5 +44,6 @@
         android:layout_height="wrap_content"
         android:text="ADD ITEM"
         android:id="@+id/add_item_button"
+        />
 
 </LinearLayout>
