@@ -14,35 +14,6 @@
         android:id="@+id/textview"
         android:textSize="20sp"
         />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edittext"
-        android:hint="Enter Your Activity"
-        />
-    <CalendarView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/calender"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/button_save"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Discard"
-        android:id="@+id/button_discard"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tasl List"
-        android:id="@+id/text_tasklist"
-        />
 
     <CheckBox
         android:layout_width="match_parent"
@@ -64,9 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pay the electricity bill"
-        android:checked="false
-"
+        android:checked="false"
         android:id="@+id/checkbox"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD ITEM"
+        android:id="@+id/add_item_button"
 
 </LinearLayout>
