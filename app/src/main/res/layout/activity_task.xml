@@ -10,37 +10,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter task Here"
-        android:textSize="30sp"
         android:id="@+id/tasktext"
-        android:layout_marginTop="30dp"
         />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="40dp"
-
+        android:id="@+id/edittext"
+        android:inputType="text"
         android:hint="Enter Task"
-
-
         />
     <DatePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/calender"
         />
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/save_button"
-        />
-    <Button
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save_button"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Discard"
+            android:id="@+id/discard_button"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Discard"
-        android:id="@+id/discard_button"
+        android:id="@+id/recyclerview"
         />
 
 
