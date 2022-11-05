@@ -16,14 +16,14 @@
 
         android:layout_weight="1"
         android:text="1:"
-        android:id="@+id/numbermain"
+        android:id="@+id/tasknumber"
         />
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:layout_weight="4"
-        android:id="@+id/textmain"
+        android:id="@+id/taskname"
         android:text="string"
         />
 </LinearLayout>

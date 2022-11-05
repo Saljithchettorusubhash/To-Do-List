@@ -1,7 +1,7 @@
 package com.example.firstassignment
 
-class RecyclerItemmain constructor(var text: String, var number: Int) {
+class RecyclerItemmain constructor(var taskname : String, var tasknumber: Int) {
     // private fields of the class
-    private var _text: String = text
-    private var _number: Int = number
+    private var _taskname: String = taskname
+    private var _tasknumber: Int = tasknumber
 }

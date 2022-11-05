@@ -5,17 +5,16 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class SQLdatabase (context: Context, name: String, factory: SQLiteDatabase.CursorFactory?,
-                       version: Int)
-    : SQLiteOpenHelper(context, name, factory, version) {
-    private val CREATE_TABLE: String = "create table test(" +
-            "ID integer primary key autoincrement," +
-            "TASK string"+")"
-    override fun onCreate(p0: SQLiteDatabase?) {
-        p0?.execSQL(CREATE_TABLE)
+class SQLdatabase (context: Context)
+    : SQLiteOpenHelper(context,"TASKDB",null,1) {
+    override fun onCreate(db: SQLiteDatabase?) {
+        db?.execSQL("CREATE TABLE TASK(TASKID INTEGER PRIMARY KEY AUTOINCREMENT, TASKNAME TEXT) ")
+
+        db?.execSQL("INSERT INTO TASK (TASKNAME) VALUES('')")
+        db?.execSQL("INSERT INTO TASK (TASKNAME) VALUES('')")
+
     }
-    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-        p0?.execSQL(CREATE_TABLE)
+    override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
     }
 
 }
