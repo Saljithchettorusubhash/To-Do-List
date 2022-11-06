@@ -33,11 +33,17 @@
         android:id="@+id/add_button"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="View"
+        android:id="@+id/view_button"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerviewmain"
-        tools:listitem="@layout/recycler_item_main"
         />
 
 
